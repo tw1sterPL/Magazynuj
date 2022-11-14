@@ -59,6 +59,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helpers\BaseCommand.cs" />
+    <Compile Include="ViewModels\CounterPartyListWindowViewModel.cs" />
     <Compile Include="ViewModels\DeleteViewModel.cs" />
     <Compile Include="ViewModels\NewInvoiceViewModel.cs" />
     <Compile Include="View\CounterPartyListWindowView.xaml.cs">

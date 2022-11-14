@@ -58,12 +58,12 @@
                             <TextBlock HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Margin="20,10,0,0" TextAlignment="Right" RenderTransformOrigin="2.053,0.404"><Run Language="pl-pl" Text="NIP"/></TextBlock>
                         </Grid>
                     </GroupBox>
-                    <TextBox HorizontalAlignment="Left" Height="20" Margin="68,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" TextChanged="TextBox_TextChanged" BorderBrush="#FFE4E4E4" IsReadOnlyCaretVisible="True"/>
+                    <TextBox HorizontalAlignment="Left" Height="20" Margin="68,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" BorderBrush="#FFE4E4E4" IsReadOnlyCaretVisible="True"/>
                     <TextBlock HorizontalAlignment="Left" Height="20" Margin="20,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" TextAlignment="Right"><Run Language="pl-pl" Text="Nazwa"/></TextBlock>
                     <TextBox HorizontalAlignment="Left" Height="20" Margin="68,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" BorderBrush="#FFE4E4E4" IsReadOnlyCaretVisible="True"/>
                     <TextBlock HorizontalAlignment="Left" Height="20" Margin="178,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" TextAlignment="Right"><Run Language="pl-pl" Text="Kod"/></TextBlock>
                     <TextBox HorizontalAlignment="Left" Height="20" Margin="218,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" BorderBrush="#FFE4E4E4" IsReadOnlyCaretVisible="True"/>
-                    <Button Content="Wybierz" HorizontalAlignment="Left" Height="34" Margin="314,82,0,0" VerticalAlignment="Top" Width="75" Background="White" BorderBrush="#FFA5A5A5">
+                    <Button Content="Wybierz" HorizontalAlignment="Left" Height="34" Margin="314,82,0,0" VerticalAlignment="Top" Width="75" Background="White" BorderBrush="#FFA5A5A5" Click="OpenWindow">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="5"/>
@@ -104,21 +104,21 @@
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button Content="Zmień" HorizontalAlignment="Left" Height="20" Margin="90,0,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click">
+                        <Button Content="Zmień" HorizontalAlignment="Left" Height="20" Margin="90,0,0,0" VerticalAlignment="Top" Width="60">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="5"/>
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button Content="Usuń" HorizontalAlignment="Left" Height="20" Margin="165,0,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_1">
+                        <Button Content="Usuń" HorizontalAlignment="Left" Height="20" Margin="165,0,0,0" VerticalAlignment="Top" Width="60">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="5"/>
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button Content="Dodaj rabat" HorizontalAlignment="Left" Height="20" Margin="315,0,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click_2">
+                        <Button Content="Dodaj rabat" HorizontalAlignment="Left" Height="20" Margin="315,0,0,0" VerticalAlignment="Top" Width="80">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="5"/>

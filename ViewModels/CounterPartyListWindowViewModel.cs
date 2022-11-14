@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Magazynuj.ViewModels
 {
-    internal class CounterPartyListWindowViewModel
+    public class CounterPartyListWindowViewModel : WorkSpaceViewModel
     {
+        #region Constructor
+        public CounterPartyListWindowViewModel()
+        {
+            base.DisplayName = "Kontrahenci";
+        }
+        #endregion
     }
 }

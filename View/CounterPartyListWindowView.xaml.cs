@@ -23,5 +23,6 @@ namespace Magazynuj.View
         {
             InitializeComponent();
         }
+
     }
 }
