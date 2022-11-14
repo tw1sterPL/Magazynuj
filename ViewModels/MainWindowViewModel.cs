@@ -60,6 +60,14 @@ namespace Magazynuj.ViewModels
                 return getCommand(_CreateDeleteCommand, new DeleteViewModel());
             }
         }
+        private BaseCommand _CreateNewInvoiceCommand;
+        public ICommand CreateNewInvoiceCommand
+        {
+            get
+            {
+                return getCommand(_CreateNewInvoiceCommand, new DeleteViewModel());
+            }
+        }
 
         #endregion
         #region NewWindow
