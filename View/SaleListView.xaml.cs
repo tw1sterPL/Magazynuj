@@ -30,5 +30,12 @@ namespace Magazynuj.View
             deletedView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             deletedView.Show();
         }
+        private void OpenWindowNewInvoice(object sender, RoutedEventArgs e)
+        {
+            NewInvoiceView newInvoiceView = new NewInvoiceView();
+            newInvoiceView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            newInvoiceView.Show();
+        }
+
     }
 }

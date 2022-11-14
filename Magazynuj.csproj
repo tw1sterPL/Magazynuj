@@ -60,6 +60,7 @@
     </ApplicationDefinition>
     <Compile Include="Helpers\BaseCommand.cs" />
     <Compile Include="ViewModels\DeleteViewModel.cs" />
+    <Compile Include="ViewModels\NewInvoiceViewModel.cs" />
     <Compile Include="View\DeletedView.xaml.cs">
       <DependentUpon>DeletedView.xaml</DependentUpon>
     </Compile>

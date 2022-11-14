@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Magazynuj.ViewModels
 {
-    internal class NewInvoiceView
+    public class NewInvoiceViewModel : WorkSpaceViewModel
     {
+        #region Constructor
+        public NewInvoiceViewModel()
+        {
+            base.DisplayName = "Faktura";
+        }
+        #endregion
     }
 }
