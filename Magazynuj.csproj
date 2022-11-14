@@ -61,6 +61,9 @@
     <Compile Include="Helpers\BaseCommand.cs" />
     <Compile Include="ViewModels\DeleteViewModel.cs" />
     <Compile Include="ViewModels\NewInvoiceViewModel.cs" />
+    <Compile Include="View\CounterPartyListWindowView.xaml.cs">
+      <DependentUpon>CounterPartyListWindowView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DeletedView.xaml.cs">
       <DependentUpon>DeletedView.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
     <Compile Include="View\NewCounterpartyView.xaml.cs">
       <DependentUpon>NewCounterpartyView.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\CounterPartyListWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\DeletedView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
