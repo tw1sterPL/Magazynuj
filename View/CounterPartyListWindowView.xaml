@@ -42,7 +42,7 @@
                     <RowDefinition Height="60*"/>
                     <RowDefinition Height="245*"/>
                 </Grid.RowDefinitions>
-                <Button Content="Dodaj" HorizontalAlignment="Center" Height="34" Grid.Row="1" VerticalAlignment="Center" Width="95" FontFamily="Candara" Background="White">
+                <Button Content="Dodaj" HorizontalAlignment="Center" Height="34" Grid.Row="1" VerticalAlignment="Center" Width="95" FontFamily="Candara" Background="White" Click="OpenWindow" >
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="5"/>

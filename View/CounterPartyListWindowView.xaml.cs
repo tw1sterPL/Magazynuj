@@ -23,6 +23,16 @@ namespace Magazynuj.View
         {
             InitializeComponent();
         }
+        private void OpenWindow(object sender, RoutedEventArgs e)
+        {
+            NewCounterpartyView newCounterparty = new NewCounterpartyView();
+            newCounterparty.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            newCounterparty.Show();
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
