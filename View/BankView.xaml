@@ -37,7 +37,7 @@
                 <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="20" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextAlignment="Right" Margin="20,14,0,0"><Run Language="pl-pl" Text="Numer"/></TextBlock>
                 <TextBox Grid.Column="2" adorners:Watermark.Text="Numer rachunku" HorizontalAlignment="Left" Height="20" Margin="10,14,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="605"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="20" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" TextAlignment="Right" Margin="0,14,0,0"><Run Language="pl-pl" Text="Zagraniczny"/></TextBlock>
-                <CheckBox Grid.Column="2" Grid.Row="3" Checked="CheckBox_Checked" Content="tak&#xD;&#xA;" Margin="10,17,604,21"/>
+                <CheckBox Grid.Column="2" Grid.Row="3" Content="tak&#xD;&#xA;" Margin="10,17,604,21"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="20" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" TextAlignment="Right" Margin="0,14,0,0"><Run Language="pl-pl" Text="SWIFT"/></TextBlock>
                 <TextBox Grid.Column="2" adorners:Watermark.Text="Numer SWIFT" HorizontalAlignment="Left" Height="20" Margin="10,14,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="605"/>
             </Grid>

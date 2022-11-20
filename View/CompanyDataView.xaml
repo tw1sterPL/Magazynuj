@@ -16,7 +16,7 @@
     </Window.Resources>
     <Grid>
         <TabControl>
-            <TabItem Header="Kontrahent">
+            <TabItem Header="Podstawowe">
                 <Grid Background="#FF005F7F">
                     <Grid Margin="10,10,10,67" Background="#FF005F7F"/>
                     <StackPanel Margin="10,414,10,0">
@@ -45,7 +45,7 @@
                         </Grid>
                     </StackPanel>
                     <Border Background="White" BorderBrush="#FF005F7F" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,10,10,72">
-                        <Grid Margin="11,11,11,9" Background="White">
+                        <Grid Margin="9,11,13,9" Background="White">
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="66,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Background="White" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Firma"/></TextBlock>
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="66,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="ul."/></TextBlock>
                             <TextBox adorners:Watermark.Text="Nazwa firmy:" HorizontalAlignment="Left" Height="20" Margin="116,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" VerticalContentAlignment="Center" Foreground="Black" FontFamily="Candara"/>
@@ -61,18 +61,21 @@
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="470,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="KRS"/></TextBlock>
                             <TextBox adorners:Watermark.Text="KRS:" HorizontalAlignment="Left" Height="20" Margin="515,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="8,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Miejsce:"/></TextBlock>
-                            <TextBox adorners:Watermark.Text="Miejsce wystawienia dokumentu:" HorizontalAlignment="Left" Height="20" Margin="116,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara" TextChanged="TextBox_TextChanged"/>
+                            <TextBox adorners:Watermark.Text="Miejsce wystawienia dokumentu:" HorizontalAlignment="Left" Height="20" Margin="116,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock Height="20" Margin="21,162,0,0" VerticalAlignment="Top" Width="85" FontSize="10" TextAlignment="Right" HorizontalAlignment="Left" Padding="0,3,0,0"><Run Language="pl-pl" Text="Wystawca"/></TextBlock>
                             <TextBox adorners:Watermark.Text="Miejsce wystawienia dokumentu:" HorizontalAlignment="Left" Height="20" Margin="116,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="46,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Telefony"/></TextBlock>
                             <TextBox adorners:Watermark.Text="Telefony:" HorizontalAlignment="Left" Height="20" Margin="116,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="46,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="E-mail"/></TextBlock>
                             <TextBox adorners:Watermark.Text="E-mail:" HorizontalAlignment="Left" Height="20" Margin="116,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
+                            <TextBlock HorizontalAlignment="Left" Height="18" Margin="55,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" TextAlignment="Right"><Run Language="pl-pl" Text="Opis"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
+                            <TextBox adorners:Watermark.Text="Opis widocznhy na wydrukach dokumentów" HorizontalAlignment="Left" Height="50" Margin="116,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4"/>
+
                         </Grid>
                     </Border>
                 </Grid>
             </TabItem>
-            <TabItem Header="Inne">
+            <TabItem Header="Banki">
                 <Grid Background="#FF005F7F">
                     <Grid Margin="10,10,10,67" Background="#FF005F7F"/>
                     <StackPanel Margin="10,414,10,0">
