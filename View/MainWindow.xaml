@@ -21,7 +21,8 @@
             </Grid.ColumnDefinitions>
             <StackPanel Background="#FF006080" Grid.ColumnSpan="2">
                 <Menu Height="29" Background="#FF006080">
-                    <MenuItem Header="_Sprzedaż" Height="29" Width="85" Click="MenuItem_Click" FontFamily="Candara" FontSize="16"  Foreground="White" Padding="10,0,0,0" >
+                    
+                    <MenuItem Header="_Sprzedaż" Height="29" Width="85" FontFamily="Candara" FontSize="16"  Foreground="White" Padding="10,0,0,0" >
                         <MenuItem Header="_Faktura" Foreground="Black">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/faktura.png"/>
@@ -33,14 +34,14 @@
                             </MenuItem.Icon>
                         </MenuItem>
                         <Separator/>
-                        <MenuItem Header="_Lista dokumentów" Foreground="Black">
+                        <MenuItem Header="_Lista dokumentów" Foreground="Black" Command="{Binding CreateSaleListCommand}">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/dokumenty.png" />
 
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="_Towary" Height="29" Width="70" Click="MenuItem_Click" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0" >
+                    <MenuItem Header="_Towary" Height="29" Width="70" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0" >
                         <MenuItem Header="_Nowy towar" Foreground="Black">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/towar.png" />
@@ -55,7 +56,7 @@
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="_Kontrahenci" Height="29" Width="105" Click="MenuItem_Click" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0">
+                    <MenuItem Header="_Kontrahenci" Height="29" Width="105" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0">
                         <MenuItem Header="_Nowy kontrahent" Foreground="Black">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/klient.png" />
@@ -70,7 +71,7 @@
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="_Noty" Height="29" Width="60" Click="MenuItem_Click" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0">
+                    <MenuItem Header="_Noty" Height="29" Width="60" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0">
                         <MenuItem Header="_Lista not korygujących" Foreground="Black">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/creditnote.png" />
@@ -78,7 +79,7 @@
                             </MenuItem.Icon>
                         </MenuItem>
                     </MenuItem>
-                    <MenuItem Header="_O programie" Height="29" Width="100" Click="MenuItem_Click" FontFamily="Candara" FontSize="16" Foreground="White"/>
+                    <MenuItem Header="_Dane firmy" Height="29" Width="100" Click="OpenWindowCompanyDataView" FontFamily="Candara" FontSize="16" Foreground="White"/>
                 </Menu>
             </StackPanel>
         </Grid>

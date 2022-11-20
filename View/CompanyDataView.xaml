@@ -63,9 +63,9 @@
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="8,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Miejsce:"/></TextBlock>
                             <TextBox adorners:Watermark.Text="Miejsce wystawienia dokumentu:" HorizontalAlignment="Left" Height="20" Margin="116,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock Height="20" Margin="21,162,0,0" VerticalAlignment="Top" Width="85" FontSize="10" TextAlignment="Right" HorizontalAlignment="Left" Padding="0,3,0,0"><Run Language="pl-pl" Text="Wystawca"/></TextBlock>
-                            <TextBox adorners:Watermark.Text="Miejsce wystawienia dokumentu:" HorizontalAlignment="Left" Height="20" Margin="116,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
-                            <TextBlock HorizontalAlignment="Left" Height="20" Margin="46,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Telefony"/></TextBlock>
-                            <TextBox adorners:Watermark.Text="Telefony:" HorizontalAlignment="Left" Height="20" Margin="116,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
+                            <TextBox adorners:Watermark.Text="Wystawca dokumentu:" HorizontalAlignment="Left" Height="20" Margin="116,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
+                            <TextBlock HorizontalAlignment="Left" Height="20" Margin="46,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Telefon"/></TextBlock>
+                            <TextBox adorners:Watermark.Text="Telefon:" HorizontalAlignment="Left" Height="20" Margin="116,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock HorizontalAlignment="Left" Height="20" Margin="46,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="E-mail"/></TextBlock>
                             <TextBox adorners:Watermark.Text="E-mail:" HorizontalAlignment="Left" Height="20" Margin="116,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
                             <TextBlock HorizontalAlignment="Left" Height="18" Margin="55,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" TextAlignment="Right"><Run Language="pl-pl" Text="Opis"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
@@ -75,7 +75,7 @@
                     </Border>
                 </Grid>
             </TabItem>
-            <TabItem Header="Banki">
+            <TabItem Header="Banki" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
                 <Grid Background="#FF005F7F">
                     <Grid Margin="10,10,10,67" Background="#FF005F7F"/>
                     <StackPanel Margin="10,414,10,0">
@@ -86,7 +86,6 @@
                                 <ColumnDefinition Width="122*"/>
 
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Foreground="White" Margin="0,-3,0,0" FontFamily="Candara"><Run Language="pl-pl" Text="Musisz podać kod kontrahenta! Musisz podać nazwę kontrahenta!"/></TextBlock>
                             <Button Grid.Column="1" Content="Zapisz" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Background="White" BorderBrush="#FFFBFBFB" FontFamily="Candara">
                                 <Button.Resources>
                                     <Style TargetType="{x:Type Border}">
@@ -105,37 +104,39 @@
                     </StackPanel>
                     <Border Background="White" BorderBrush="#FF005F7F" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,10,10,72">
                         <Grid Margin="11,11,11,9" Background="White">
-                            <TextBlock HorizontalAlignment="Left" Height="20" Margin="116,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Background="White" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Domyślna forma płatności:"/></TextBlock>
-                            <ComboBox HorizontalAlignment="Left" Height="20" Margin="306,10,0,0" VerticalAlignment="Top" Width="194" BorderBrush="White" Foreground="#FFC3C3C3" FontFamily="Candara">
-                                <ComboBox.Background>
-                                    <LinearGradientBrush EndPoint="0,1">
-                                        <GradientStop Color="White"/>
-                                        <GradientStop Color="White" Offset="1"/>
-                                    </LinearGradientBrush>
-                                </ComboBox.Background>
-                            </ComboBox>
-                            <TextBlock HorizontalAlignment="Left" Height="20" Margin="140,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Domyślny rabat:"/></TextBlock>
-                            <ComboBox HorizontalAlignment="Left" Height="20" Margin="306,49,0,0" VerticalAlignment="Top" Width="194" FontFamily="Candara"/>
-                            <TextBlock HorizontalAlignment="Left" Height="20" Margin="135,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Domyślny cennik:"/></TextBlock>
-                            <ComboBox HorizontalAlignment="Left" Height="20" Margin="306,88,0,0" VerticalAlignment="Top" Width="194" FontFamily="Candara"/>
-                            <GroupBox Header="Typ" Margin="35,137,35,155" BorderBrush="#FF005F7F" FontFamily="Arial">
-                                <Grid>
-                                    <CheckBox Content="Odbiorca" HorizontalAlignment="Left" Height="24" VerticalAlignment="Center" Width="120" Margin="129,0,0,0" FontFamily="Candara"/>
-                                    <CheckBox Content="Dostawca" HorizontalAlignment="Left" Height="24" VerticalAlignment="Center" Width="145" Margin="254,0,0,0" FontFamily="Candara"/>
-
-                                </Grid>
-                            </GroupBox>
-                            <GroupBox Header="Bank kontrahenta" Margin="35,227,35,25" BorderBrush="#FF005F7F" FontFamily="Arial">
-                                <Grid Height="115">
-                                    <TextBlock HorizontalAlignment="Left" Height="20" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.6,-2.947" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Nazwa:"/></TextBlock>
-                                    <TextBox adorners:Watermark.Text="Nazwa banku:" HorizontalAlignment="Left" Height="20" Margin="144,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" MinWidth="4" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
-                                    <TextBlock HorizontalAlignment="Left" Height="20" Margin="49,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" TextAlignment="Right" FontFamily="Candara"><Run Language="pl-pl" Text="Nr. konta:"/></TextBlock>
-                                    <TextBox adorners:Watermark.Text="Numer konta:" HorizontalAlignment="Left" Height="20" Margin="144,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="495" BorderBrush="#FFE4E4E4" FontFamily="Candara"/>
-
-
-                                </Grid>
-                            </GroupBox>
-
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="22*"/>
+                                <RowDefinition Height="3*"/>
+                            </Grid.RowDefinitions>
+                            <DataGrid Grid.Row="0" Margin="0,0,10,0" BorderBrush="{x:Null}" Background="White">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Nazwa" Width="2*" Foreground="White"/>
+                                    <DataGridTextColumn Header="Numer" Width="2*"/>
+                                    <DataGridTextColumn Header="SWIFT" Width="1*"/>
+                                    <DataGridTextColumn Header="Domyślny" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <Button Content="Dodaj" HorizontalAlignment="Left" Height="25" Grid.Row="1" VerticalAlignment="Center" Width="100" Background="White" Margin="375,0,0,0" Click="OpenWindow">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <Button Content="Edytuj" HorizontalAlignment="Left" Height="25" Margin="495,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="100" Background="White">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <Button Content="Usuń" HorizontalAlignment="Left" Height="25" Margin="620,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="100" Background="White" Click="OpenWindowDeletedView">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
                         </Grid>
                     </Border>
                 </Grid>

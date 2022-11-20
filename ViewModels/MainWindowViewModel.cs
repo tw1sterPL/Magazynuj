@@ -6,6 +6,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
@@ -76,7 +77,15 @@ namespace Magazynuj.ViewModels
                 return getCommand(_CreateCounterListWindowCommand, new DeleteViewModel());
             }
         }
-
+        private BaseCommand _CreateDeletedSecondWindowCommand;
+        public ICommand CreateDeletedSecondWindowCommand
+        {
+            get
+            {
+                return getCommand(_CreateDeletedSecondWindowCommand, new DeletedSecondViewModel());
+            }
+        }
+            
         #endregion
         #region NewWindow
 

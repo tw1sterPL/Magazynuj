@@ -23,6 +23,18 @@ namespace Magazynuj.View
         {
             InitializeComponent();
         }
+        private void OpenWindow(object sender, RoutedEventArgs e)
+        {
+            BankView bankView = new BankView();
+            bankView.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            bankView.Show();
+        }
 
+        private void OpenWindowDeletedView(object sender, RoutedEventArgs e)
+        {
+            DeletedSecondView deletedSecondView = new DeletedSecondView();
+            deletedSecondView.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            deletedSecondView.Show();
+        }
     }
 }

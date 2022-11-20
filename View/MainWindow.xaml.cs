@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Magazynuj.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,23 @@ namespace Magazynuj
             InitializeComponent();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void OpenWindowCompanyDataView(object sender, RoutedEventArgs e)
         {
-
+            CompanyDataView companyDataView = new CompanyDataView();
+            companyDataView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            companyDataView.Show();
+        }
+        private void OpenWindowNewInvoiceView(object sender, RoutedEventArgs e)
+        {
+            NewInvoiceView newInvoiceView = new NewInvoiceView();
+            newInvoiceView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            newInvoiceView.Show();
+        }
+        private void WindowOpenNewCounterPartyView(object sender, RoutedEventArgs e)
+        {
+            NewCounterpartyView newCounterPartyView = new NewCounterpartyView();
+            newCounterPartyView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            newCounterPartyView.Show();
         }
     }
 }
