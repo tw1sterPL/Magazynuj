@@ -23,7 +23,7 @@
                 <Menu Height="29" Background="#FF006080">
                     
                     <MenuItem Header="_Sprzedaż" Height="29" Width="85" FontFamily="Candara" FontSize="16"  Foreground="White" Padding="10,0,0,0" >
-                        <MenuItem Header="_Faktura" Foreground="Black">
+                        <MenuItem Header="_Faktura" Foreground="Black" Click="OpenWindowNewInvoiceView">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/faktura.png"/>
                             </MenuItem.Icon>
@@ -57,14 +57,14 @@
                         </MenuItem>
                     </MenuItem>
                     <MenuItem Header="_Kontrahenci" Height="29" Width="105" FontFamily="Candara" FontSize="16" Foreground="White" Padding="10,0,0,0">
-                        <MenuItem Header="_Nowy kontrahent" Foreground="Black">
+                        <MenuItem Header="_Nowy kontrahent" Foreground="Black" Click="WindowOpenNewCounterPartyView">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/klient.png" />
 
                             </MenuItem.Icon>
                         </MenuItem>
                         <Separator/>
-                        <MenuItem Header="_Lista kontrahentów" Foreground="Black">
+                        <MenuItem Header="_Lista kontrahentów" Foreground="Black" Command="{Binding CreateCounterPartyCommand}">
                             <MenuItem.Icon>
                                 <Image Source="/Source/Icons/listaklientow.png" />
 

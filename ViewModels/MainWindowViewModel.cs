@@ -85,7 +85,15 @@ namespace Magazynuj.ViewModels
                 return getCommand(_CreateDeletedSecondWindowCommand, new DeletedSecondViewModel());
             }
         }
-            
+        private BaseCommand _CreateDiscountInvoiceViewWindowCommand;
+        public ICommand CreateDiscountInvoiceViewWindowCommand
+        {
+            get
+            {
+                return getCommand(_CreateCounterListWindowCommand, new DiscountInvoiceViewModel());
+            }
+        }
+
         #endregion
         #region NewWindow
 
