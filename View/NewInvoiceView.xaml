@@ -118,7 +118,7 @@
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button Content="Dodaj rabat" HorizontalAlignment="Left" Height="20" Margin="315,0,0,0" VerticalAlignment="Top" Width="80">
+                        <Button Content="Dodaj rabat" HorizontalAlignment="Left" Height="20" Margin="315,0,0,0" VerticalAlignment="Top" Width="80" Click="OpenWindowNewDiscount">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="5"/>

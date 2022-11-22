@@ -29,6 +29,12 @@ namespace Magazynuj.View
             counterPartyListWindowView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             counterPartyListWindowView.Show();
         }
+        private void OpenWindowNewDiscount(object sender, RoutedEventArgs e)
+        {
+            DiscountInvoiceView discountInvoiceView = new DiscountInvoiceView();
+            discountInvoiceView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            discountInvoiceView.Show();
+        }
 
     }
 }
