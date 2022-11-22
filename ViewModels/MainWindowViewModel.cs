@@ -66,7 +66,7 @@ namespace Magazynuj.ViewModels
         {
             get
             {
-                return getCommand(_CreateNewInvoiceCommand, new DeleteViewModel());
+                return getCommand(_CreateNewInvoiceCommand, new NewInvoiceViewModel());
             }
         }
         private BaseCommand _CreateCounterListWindowCommand;
@@ -74,7 +74,7 @@ namespace Magazynuj.ViewModels
         {
             get
             {
-                return getCommand(_CreateCounterListWindowCommand, new DeleteViewModel());
+                return getCommand(_CreateCounterListWindowCommand, new CounterPartyListViewModel());
             }
         }
         private BaseCommand _CreateDeletedSecondWindowCommand;
@@ -90,9 +90,11 @@ namespace Magazynuj.ViewModels
         {
             get
             {
-                return getCommand(_CreateCounterListWindowCommand, new DiscountInvoiceViewModel());
+                return getCommand(_CreateDiscountInvoiceViewWindowCommand, new DiscountInvoiceViewModel());
             }
         }
+        private BaseCommand _CreateGoodsListCommand;
+        public ICommand CreateGoodsListCommand => getCommand(_CreateGoodsListCommand, new AllGoodsListViewModel());
 
         #endregion
         #region NewWindow
@@ -116,6 +118,7 @@ namespace Magazynuj.ViewModels
             return new List<CommandViewModel>
             {
                 new CommandViewModel("Kontrahenci",new BaseCommand(()=>this.Create(new CounterPartyListViewModel()))), //
+                new CommandViewModel("Lista towarów",new BaseCommand(()=>this.Create(new AllGoodsListViewModel()))), //
                 //new CommandViewModel("Wszystkie towary",new BaseCommand(()=>this.ShowAllTowar())), //          
             };
         }

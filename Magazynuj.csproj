@@ -59,11 +59,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helpers\BaseCommand.cs" />
+    <Compile Include="ViewModels\AllGoodsListViewModel.cs" />
     <Compile Include="ViewModels\CounterPartyListWindowViewModel.cs" />
     <Compile Include="ViewModels\DeletedSecondViewModel.cs" />
     <Compile Include="ViewModels\DeleteViewModel.cs" />
     <Compile Include="ViewModels\DiscountInvoiceViewModel.cs" />
     <Compile Include="ViewModels\NewInvoiceViewModel.cs" />
+    <Compile Include="View\AddGoodsView.xaml.cs">
+      <DependentUpon>AddGoodsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\AllGoodsListView.xaml.cs">
       <DependentUpon>AllGoodsListView.xaml</DependentUpon>
     </Compile>
@@ -105,6 +109,10 @@
     <Compile Include="View\NewCounterpartyView.xaml.cs">
       <DependentUpon>NewCounterpartyView.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\AddGoodsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AllGoodsListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
