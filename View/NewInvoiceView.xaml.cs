@@ -35,6 +35,12 @@ namespace Magazynuj.View
             discountInvoiceView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             discountInvoiceView.Show();
         }
+        private void AddNewGoodsWindow(object sender, RoutedEventArgs e)
+        {
+            AllGoodsListWindowView allGoodsListWindowView = new AllGoodsListWindowView();
+            allGoodsListWindowView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            allGoodsListWindowView.Show();
+        }
 
     }
 }

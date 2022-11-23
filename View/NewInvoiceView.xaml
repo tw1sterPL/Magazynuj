@@ -97,7 +97,7 @@
                         </StackPanel>
                     </Grid>
                     <Grid HorizontalAlignment="Left" Height="125" Margin="13,574,0,0" VerticalAlignment="Top" Width="755">
-                        <Button Content="Dodaj" HorizontalAlignment="Left" Height="20" Margin="15,0,0,0" VerticalAlignment="Top" Width="60">
+                        <Button Content="Dodaj" HorizontalAlignment="Left" Height="20" Margin="15,0,0,0" VerticalAlignment="Top" Width="60" Click="AddNewGoodsWindow">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="5"/>

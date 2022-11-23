@@ -60,6 +60,7 @@
     </ApplicationDefinition>
     <Compile Include="Helpers\BaseCommand.cs" />
     <Compile Include="ViewModels\AllGoodsListViewModel.cs" />
+    <Compile Include="ViewModels\AllGoodsListWindowViewModel.cs" />
     <Compile Include="ViewModels\CounterPartyListWindowViewModel.cs" />
     <Compile Include="ViewModels\DeletedSecondViewModel.cs" />
     <Compile Include="ViewModels\DeleteViewModel.cs" />

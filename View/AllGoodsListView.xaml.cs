@@ -24,5 +24,17 @@ namespace Magazynuj.View
         {
             InitializeComponent();
         }
+        private void AddNewGoodsViewWindow(object sender, RoutedEventArgs e)
+        {
+            AddGoodsView addGoodsView = new AddGoodsView();
+            addGoodsView.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            addGoodsView.Show();
+        }
+        private void DeletedGoodsViewWindow(object sender, RoutedEventArgs e)
+        {
+            DeletedView deletedView = new DeletedView();
+            deletedView.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            deletedView.Show();
+        }
     }
 }
