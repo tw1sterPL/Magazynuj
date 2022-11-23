@@ -15,15 +15,18 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <Grid Background="#FF005F7F">
+        <Grid Background="#1984c5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="9*"/>
                 <RowDefinition Height="420*"/>
                 <RowDefinition Height="80*"/>
             </Grid.RowDefinitions>
-            <Grid Background="#FF005F7F" Grid.Row="1"/>
-            <Border Background="#FFF7F7F7" BorderBrush="#FF005F7F" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,1,10,2" Grid.Row="1">
-                <Grid Margin="9,11,13,9" Background="#FFF7F7F7">
+            <Grid Background="#1984c5" Grid.Row="1"/>
+            <Border Background="#e2e2e2" BorderBrush="#1984c5" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,1,10,2" Grid.Row="1">
+                <Grid Margin="9,11,13,9">
+                    <Grid.Background>
+                        <SolidColorBrush Color="#e2e2e2"/>
+                    </Grid.Background>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="92*"/>
                         <RowDefinition Height="303*"/>
@@ -39,9 +42,9 @@
                             <ColumnDefinition Width="169*"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" Height="20" Text="Kod" TextAlignment="Right" VerticalAlignment="Center"/>
-                        <TextBox Grid.Row="0" Grid.Column="2" adorners:Watermark.Text="Kod towaru:" Height="20" Width="150" HorizontalAlignment="Left" BorderBrush="#FFE4E4E4" BorderThickness="0,0,0,3"/>
+                        <TextBox Grid.Row="0" Grid.Column="2" adorners:Watermark.Text="Kod towaru:" Height="20" Width="150" HorizontalAlignment="Left" BorderBrush="#FFBDBDBD" Background="White" BorderThickness="0,0,0,3"/>
                         <TextBlock Grid.Row="1" Grid.Column="0" Height="20" Text="Nazwa" TextAlignment="Right" VerticalAlignment="Top"/>
-                        <TextBox Grid.Row="1" Grid.Column="2" Height="50" Width="660" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFE4E4E4" BorderThickness="0,0,0,3"/>
+                        <TextBox Grid.Row="1" Grid.Column="2" Height="50" Width="660" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFBDBDBD" Background="White" BorderThickness="0,0,0,3"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -72,15 +75,15 @@
                         <TextBlock Grid.Row="5" Grid.Column="0" Text="Cena D" VerticalAlignment="Center" TextAlignment="Right"/>
                         <ComboBox Grid.Row="0" Grid.Column="2" IsReadOnly="True" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left" Background="{x:Null}" BorderBrush="{x:Null}" />
                         <ComboBox Grid.Row="1" Grid.Column="2" IsReadOnly="True" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left" />
-                        <TextBox Grid.Row="2" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży A:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="3" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży B:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="4" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży C:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="5" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży D:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="1" Grid.Column="6" adorners:Watermark.Text="EAN" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="2" Grid.Column="6" adorners:Watermark.Text="Cena brutto A:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="3" Grid.Column="6" adorners:Watermark.Text="Cena brutto B:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="4" Grid.Column="6" adorners:Watermark.Text="Cena brutto C:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
-                        <TextBox Grid.Row="5" Grid.Column="6" adorners:Watermark.Text="Cena brutto D:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFE4E4E4"/>
+                        <TextBox Grid.Row="2" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży A:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="3" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży B:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="4" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży C:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="5" Grid.Column="2" adorners:Watermark.Text="Cena sprzedaży D:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="1" Grid.Column="6" adorners:Watermark.Text="EAN" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="2" Grid.Column="6" adorners:Watermark.Text="Cena brutto A:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="3" Grid.Column="6" adorners:Watermark.Text="Cena brutto B:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="4" Grid.Column="6" adorners:Watermark.Text="Cena brutto C:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
+                        <TextBox Grid.Row="5" Grid.Column="6" adorners:Watermark.Text="Cena brutto D:" VerticalAlignment="Center" Height="20" Width="110" HorizontalAlignment="Left" BorderThickness="0,0,0,3" BorderBrush="#FFBDBDBD" Background="White"/>
                         <TextBlock Grid.Row="1" Grid.Column="4" Text="Kod EAN" VerticalAlignment="Center" TextAlignment="Right"/>
                         <TextBlock Grid.Row="2" Grid.Column="4" Text="Brutto A:" VerticalAlignment="Center" TextAlignment="Right"/>
                         <TextBlock Grid.Row="3" Grid.Column="4" Text="Brutto B:" VerticalAlignment="Center" TextAlignment="Right"/>
