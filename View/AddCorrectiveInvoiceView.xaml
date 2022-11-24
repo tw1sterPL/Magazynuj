@@ -51,9 +51,62 @@
                         <TextBox Grid.Column="3" BorderBrush="#FFBDBDBD" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="2" Margin="0,0,9,0"/>
                         <Label Grid.Column="4" VerticalAlignment="Center" BorderBrush="#FFEDEDED" Height="16" BorderThickness="1,1,1,1" Grid.ColumnSpan="2" Margin="9,0,0,0"/>
                         <TextBlock Grid.Column="7" Text="Miejsce wystawienia:" VerticalAlignment="Center" Height="16" TextAlignment="Right" />
-                        <TextBox Grid.Column="9" BorderBrush="#FFBDBDBD" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="18"/>
+                        <TextBox Grid.Column="9" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Miejsce wystawienia" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="18"/>
                         <TextBlock Grid.Column="11" Text="Data wystawienia:" VerticalAlignment="Center" TextAlignment="Right"/>
                         <DatePicker Grid.Column="13" BorderBrush="{x:Null}" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <GroupBox Header="Odbiorca noty" BorderBrush="#FFBDBDBD">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="15*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="116*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="252*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="35*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="80*"/>
+                                    <ColumnDefinition Width="20*"/>
+                                    <ColumnDefinition Width="70*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="173*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Nazwa" TextAlignment="Right" VerticalAlignment="Center" Height="16" />
+                                <TextBox Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Nazwa Nabywcy:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Grid.ColumnSpan="7" />
+                                <Button Grid.Column="10" Grid.Row="0" Content="Wybierz wystawcę" Background="White" Margin="0,2,0,3">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="5"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="ul." TextAlignment="Right" VerticalAlignment="Center" Height="16" />
+                                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Ulica:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20"/>
+                                <TextBlock Grid.Row="2" Grid.Column="4" Text="nr" TextAlignment="Center" VerticalAlignment="Center" Height="16"/>
+                                <TextBox Grid.Row="2" Grid.Column="6" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Nr domu:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" />
+                                <TextBlock Grid.Row="2" Grid.Column="7" Text="/" TextAlignment="Center" VerticalAlignment="Center" Height="16"/>
+                                <TextBox Grid.Row="2" Grid.Column="8" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Nr lokalu:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" />
+                                <Button Grid.Column="10" Grid.Row="2" Content="Nasza firma" Background="White" Margin="0,2,0,3">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="5"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+
+
+
+                            </Grid>
+                        </GroupBox>
                     </Grid>
 
                 </Grid>
