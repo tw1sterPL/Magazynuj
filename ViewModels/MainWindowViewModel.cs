@@ -96,8 +96,8 @@ namespace Magazynuj.ViewModels
         private BaseCommand _CreateGoodsListCommand;
         public ICommand CreateGoodsListCommand => getCommand(_CreateGoodsListCommand, new AllGoodsListViewModel());
 
-        private BaseCommand _CreateGoodsListWindowCommand;
-        public ICommand CreateGoodsListWindowCommand => getCommand(_CreateCounterListWindowCommand, new AllGoodsListWindowViewModel());
+        private BaseCommand _CreateCorrectiveInvoiceListCommand;
+        public ICommand CreateCorrectiveInvoiceListCommand => getCommand(_CreateCorrectiveInvoiceListCommand, new CorrectiveInvoiceListViewModel());
 
         #endregion
         #region NewWindow

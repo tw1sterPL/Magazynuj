@@ -14,6 +14,9 @@
     <DataTemplate DataType="{x:Type local:AllGoodsListViewModel}">
         <vw:AllGoodsListView/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type local:CorrectiveInvoiceListViewModel}">
+        <vw:CorrectiveInvoiceListView/>
+    </DataTemplate>
     <Style x:Key="ButtonStandard" TargetType="{x:Type Button}">
         <Setter Property="HorizontalAlignment" Value="Left"></Setter>
         <Setter Property="Height" Value="25"></Setter>

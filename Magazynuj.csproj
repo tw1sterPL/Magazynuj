@@ -61,11 +61,15 @@
     <Compile Include="Helpers\BaseCommand.cs" />
     <Compile Include="ViewModels\AllGoodsListViewModel.cs" />
     <Compile Include="ViewModels\AllGoodsListWindowViewModel.cs" />
+    <Compile Include="ViewModels\CorrectiveInvoiceListViewModel.cs" />
     <Compile Include="ViewModels\CounterPartyListWindowViewModel.cs" />
     <Compile Include="ViewModels\DeletedSecondViewModel.cs" />
     <Compile Include="ViewModels\DeleteViewModel.cs" />
     <Compile Include="ViewModels\DiscountInvoiceViewModel.cs" />
     <Compile Include="ViewModels\NewInvoiceViewModel.cs" />
+    <Compile Include="View\AddCorrectiveInvoiceView.xaml.cs">
+      <DependentUpon>AddCorrectiveInvoiceView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\AddGoodsView.xaml.cs">
       <DependentUpon>AddGoodsView.xaml</DependentUpon>
     </Compile>
@@ -80,6 +84,9 @@
     </Compile>
     <Compile Include="View\CompanyDataView.xaml.cs">
       <DependentUpon>CompanyDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CorrectiveInvoiceListView.xaml.cs">
+      <DependentUpon>CorrectiveInvoiceListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CounterPartyListWindowView.xaml.cs">
       <DependentUpon>CounterPartyListWindowView.xaml</DependentUpon>
@@ -113,6 +120,10 @@
     <Compile Include="View\NewCounterpartyView.xaml.cs">
       <DependentUpon>NewCounterpartyView.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\AddCorrectiveInvoiceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AddGoodsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -130,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CompanyDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CorrectiveInvoiceListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
