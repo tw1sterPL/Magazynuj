@@ -22,7 +22,7 @@
                 <RowDefinition Height="80*"/>
             </Grid.RowDefinitions>
             <Grid Background="#1984c5" Grid.Row="1"/>
-            <Border Background="#e2e2e2" BorderBrush="#1984c5" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,1,10,2" Grid.Row="1">
+            <Border Background="#e2e2e2" BorderBrush="#1984c5" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,1,10,70" Grid.Row="1" Grid.RowSpan="2">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
@@ -82,7 +82,7 @@
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Grid.Column="0" Text="Nazwa" TextAlignment="Right" VerticalAlignment="Center" Height="16" />
                                 <TextBox Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Nazwa Nabywcy:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Grid.ColumnSpan="7" />
-                                <Button Grid.Column="10" Grid.Row="0" Content="Wybierz wystawcę" Background="White" Margin="0,2,0,3">
+                                <Button Grid.Column="10" Grid.Row="0" Content="Wybierz odbiorcę" Background="White" Margin="0,2,0,3">
                                     <Button.Resources>
                                         <Style TargetType="{x:Type Border}">
                                             <Setter Property="CornerRadius" Value="5"/>
@@ -102,7 +102,7 @@
                                 </ComboBox>
                                 <TextBlock Grid.Row="6" Grid.Column="0" Text="NIP" TextAlignment="Right" VerticalAlignment="Center" Height="16"/>
                                 <TextBox Grid.Row="6" Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="NIP" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Width="250" HorizontalAlignment="Right"/>
-                                <Button Grid.Column="10" Grid.Row="2" Content="Nasza firma" Background="White" Margin="0,2,0,3">
+                                <Button Grid.Column="10" Grid.Row="2" Content="Nasze ane" Background="White" Margin="0,2,0,3">
                                     <Button.Resources>
                                         <Style TargetType="{x:Type Border}">
                                             <Setter Property="CornerRadius" Value="5"/>
@@ -141,8 +141,8 @@
                                     <ColumnDefinition Width="173*"/>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Grid.Column="0" Text="Nazwa" TextAlignment="Right" VerticalAlignment="Center" Height="16" />
-                                <TextBox Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Nazwa Nabywcy:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Grid.ColumnSpan="7" />
-                                <Button Grid.Column="10" Grid.Row="0" Content="Wybierz wystawcę" Background="White" Margin="0,2,0,3">
+                                <TextBox Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Nazwa Sprzedawcy:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Grid.ColumnSpan="7" />
+                                <Button Grid.Column="10" Grid.Row="0" Content="Wstaw wystawce" Background="White" Margin="0,2,0,3">
                                     <Button.Resources>
                                         <Style TargetType="{x:Type Border}">
                                             <Setter Property="CornerRadius" Value="5"/>
@@ -162,7 +162,7 @@
                                 </ComboBox>
                                 <TextBlock Grid.Row="6" Grid.Column="0" Text="NIP" TextAlignment="Right" VerticalAlignment="Center" Height="16"/>
                                 <TextBox Grid.Row="6" Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="NIP" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Width="250" HorizontalAlignment="Right"/>
-                                <Button Grid.Column="10" Grid.Row="2" Content="Nasza firma" Background="White" Margin="0,2,0,3">
+                                <Button Grid.Column="10" Grid.Row="2" Content="Nasze dane" Background="White" Margin="0,2,0,3">
                                     <Button.Resources>
                                         <Style TargetType="{x:Type Border}">
                                             <Setter Property="CornerRadius" Value="5"/>
@@ -172,6 +172,42 @@
 
 
 
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <GroupBox Header="Dane z faktury VAT" BorderBrush="#FFBDBDBD">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="15*"/>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="15*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="116*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="252*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="35*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="80*"/>
+                                    <ColumnDefinition Width="20*"/>
+                                    <ColumnDefinition Width="70*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="173*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Numer faktury VAT" TextAlignment="Right" VerticalAlignment="Center" Height="16" />
+                                <TextBlock Grid.Column="2" Text="Data wystawienia" TextAlignment="Right" VerticalAlignment="Center" Height="16" HorizontalAlignment="Right" />
+                                <DatePicker Grid.Column="4" Grid.ColumnSpan="4" BorderBrush="{x:Null}" VerticalAlignment="Center" />
+                                <TextBox Grid.Column="2" BorderBrush="#FFBDBDBD" adorners:Watermark.Text="Numer faktury:" Background="White" BorderThickness="0,0,0,3" VerticalAlignment="Center" Height="20" Width="100" HorizontalAlignment="Left" />
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Treść korygowana" TextAlignment="Right" VerticalAlignment="Center" Height="16" />
+                                <TextBox Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="10" Background="White" BorderThickness="0,0,0,3" />
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="Treść prawidłowa" TextAlignment="Right" VerticalAlignment="Center" Height="16" />
+                                <TextBox Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="10" Background="White" BorderThickness="0,0,0,3" />
                             </Grid>
                         </GroupBox>
                     </Grid>
