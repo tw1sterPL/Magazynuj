@@ -17,12 +17,12 @@
     <Grid>
         <Grid Background="#1984c5">
             <Grid.RowDefinitions>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="420*"/>
-                <RowDefinition Height="80*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="247*"/>
+                <RowDefinition Height="40*"/>
             </Grid.RowDefinitions>
             <Grid Background="#1984c5" Grid.Row="1"/>
-            <Border Background="#e2e2e2" BorderBrush="#1984c5" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,1,10,70" Grid.Row="1" Grid.RowSpan="2">
+            <Border Background="#e2e2e2" BorderBrush="#1984c5" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15" Margin="10,1,10,0" Grid.Row="1">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
@@ -109,9 +109,6 @@
                                         </Style>
                                     </Button.Resources>
                                 </Button>
-
-
-
                             </Grid>
                         </GroupBox>
                     </Grid>
@@ -213,7 +210,7 @@
                     </Grid>
                 </Grid>
             </Border>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="1" Margin="0,484,0,0" Grid.RowSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="51*"/>
