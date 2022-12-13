@@ -24,5 +24,12 @@ namespace Magazynuj.View
         {
             InitializeComponent();
         }
+
+        private void OpenWindowAddCorrective(object sender, RoutedEventArgs e)
+        {
+            AddCorrectiveInvoiceView addCorrectiveInvoiceView = new AddCorrectiveInvoiceView();
+            addCorrectiveInvoiceView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            addCorrectiveInvoiceView.Show();
+        }
     }
 }

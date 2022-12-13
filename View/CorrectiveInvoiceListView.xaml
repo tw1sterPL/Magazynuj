@@ -24,7 +24,7 @@
                             <ColumnDefinition Width="209*"/>
                         </Grid.ColumnDefinitions>
                         <TextBox Grid.Column="6" HorizontalAlignment="Center" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Margin="0,18,0,0"/>
-                        <Button HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="60" Background="White" BorderBrush="{x:Null}" ToolTip="Dodaj">
+                        <Button HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="60" Background="White" BorderBrush="{x:Null}" ToolTip="Dodaj" Click="OpenWindowAddCorrective">
                             <StackPanel Height="34" Width="40" Margin="0,7,0,0">
                                 <Image Source="/Source/Icons/dodaj.png" Height="31" Width="32" />
                             </StackPanel>
